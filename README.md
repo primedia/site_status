@@ -35,10 +35,7 @@ other_endpoints:
   - 'http://canyoufixmycomputer.com/'
 ```
 
-If you prefer a different file path, configuration is simple.
-
-## Errors
-nodename nor servname provided
+If you prefer a different file path, configuration is simple:
 
 ```ruby
 SiteStat.configure do |config|

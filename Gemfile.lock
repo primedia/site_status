@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    site_status (0.0.5)
+      rainbow
+
+GEM
+  remote: http://gems01.lab.primedia.com/
+  remote: https://rubygems.org/
+  specs:
+    rainbow (1.1.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  site_status!

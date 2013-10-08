@@ -2,9 +2,9 @@ require 'yaml'
 require 'rainbow'
 require 'net/http'
 
-require 'site_status/configuration'
-require 'site_status/request'
-require 'site_status/file_reader'
+require_relative 'site_status/configuration'
+require_relative 'site_status/request'
+require_relative 'site_status/file_reader'
 
 module SiteStat
   class << self

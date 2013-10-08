@@ -1,1 +1,9 @@
 .DS_Store
+*.gem
+spec/vcr_cassettes
+.ruby-version
+.ruby-gemset
+vendor/ruby
+.bundle
+coverage
+*.orig
