@@ -9,7 +9,7 @@ If your app depends on any external services or endpoints, you've probably neede
 site_status is a light weight gem which checks the HTTP status of any website(s).
 
 ```ruby
-# ./lib/tasks/status.rake
+# create this file:  ./lib/tasks/status.rake
 namespace :status do
   task :check do
     require 'site_status'
@@ -17,7 +17,7 @@ namespace :status do
 end
 ```
 
-In your shell:
+In your shell, assuming you've already configured your endpoints:
 
 ```shell
 rake status:check
@@ -27,7 +27,7 @@ rake status:check
 site_status is configured by default to look for a file name `config/status_check.yml` in your project root.
 
 ```yaml
-# ./config/status_check.yml
+# create this file: ./config/status_check.yml
 endpoints:
   - 'http://www.b3ta.com/404'
   - 'http://github.com/'
@@ -42,10 +42,10 @@ SiteStat.configure do |config|
   config.yml_path = 'path/to/file.yml'
 end
 ```
-Configuration must be run prior to `require site_status`
+Configuration must be run prior to `require 'site_status'`
 
 ## Limitations
-Does not play well with ssl and unresolvable dns
+!!! does not play well with ssl or unresolvable dns
 
 ## Installation
 add `gem "site_status"` to your gemfile or `gem install site_status`
