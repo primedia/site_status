@@ -8,19 +8,6 @@ If your app depends on any external services or endpoints, you've probably neede
 
 ##Setup
 
-```ruby
-# create this file:  ./lib/tasks/stat.rake
-task :stat do
-  require 'site_status'
-end
-
-```
-In your shell, assuming you've already configured your endpoints:
-
-```shell
-rake stat
-```
-
 site_status is configured by default to look for a file name `config/status_check.yml` in your project root.
 
 ```yaml
@@ -32,6 +19,19 @@ other_endpoints:
   - 'http://canyoufixmycomputer.com/'
 ```
 
+```ruby
+# create this file:  ./lib/tasks/stat.rake
+task :stat do
+  require 'site_status'
+end
+
+```
+In your terminal session, assuming you've already configured your endpoints:
+
+```shell
+rake stat
+```
+### Optional Configuration
 If you prefer a different file path for your yml config, there is a simple congiuration switch:
 
 ```ruby
@@ -39,6 +39,7 @@ If you prefer a different file path for your yml config, there is a simple congi
 SiteStat.configure do |config|
   config.yml_path = 'path/to/file.yml'
 end
+```
 
 ## Limitations
 !!! does not play well with ssl or unresolvable dns
