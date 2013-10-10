@@ -55,7 +55,7 @@ If you prefer a different file path for your yml config, there is a simple congi
 
 ```ruby
 # configuration must be run prior to `require 'site_status'`
-SiteStat.configure do |config|
+SiteStatus.configure do |config|
   config.yml_path = 'path/to/file.yml'
 end
 ```
