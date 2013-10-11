@@ -8,7 +8,7 @@ SiteStatus
 
 If your app depends on any external services or endpoints, you've probably needed to ensure those services were properly responding. site_status allows you to easily monitor the http status of your sites and endpoints with a single rake task.
 
-![<Display Name>](http://i.imgur.com/2L6pXpB.png)
+![<Display Name>](http://i.imgur.com/lRQCk00.gif)
 
 ## Installation
 
