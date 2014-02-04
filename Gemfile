@@ -1,3 +1,3 @@
-source 'http://gems01.lab.primedia.com'
+source 'http://gems.idg.primedia.com'
 source 'https://rubygems.org'
 gemspec

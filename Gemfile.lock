@@ -1,11 +1,11 @@
 PATH
   remote: .
   specs:
-    site_status (0.0.5)
+    site_status (0.0.7)
       rainbow
 
 GEM
-  remote: http://gems01.lab.primedia.com/
+  remote: http://gems.idg.primedia.com/
   remote: https://rubygems.org/
   specs:
     rainbow (1.1.4)
