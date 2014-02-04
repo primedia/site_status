@@ -18,7 +18,7 @@ module SiteStat
           begin
             res = Net::HTTP.get_response(escaped_url)
             handle_response(res, service, url)
-          rescue Timeout::Error => exc
+          rescue Timeout::Error, Errno::ECONNREFUSED, SocketError => exc
             msg = "#{service}: #{url} | #{exc.message}"
             $stdout.puts msg.color(:red)
           end
